@@ -1,4 +1,4 @@
-<div class="hero-wrap hero-bread"
+<div class="hero-wrap hero-bread" 
     style="background-image: url('<?=base_url().'views/themes/'.theme_active().'/';?>images/bg_1.jpg');">
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -76,7 +76,7 @@
                             <div class="pricing">
                                 <p class="price">
                                     <?php if($p['diskon']!=0):?>
-                                    <span class="mr-2 price-dc"><?=money($p['diskon']);?></span>
+                                    <span class="mr-2 price-dc"><?=money($harga);?></span>
                                     <?php endif;?>
                                     <span class="price-sale"><?=money($harga_pas);?></span>
                                 </p>

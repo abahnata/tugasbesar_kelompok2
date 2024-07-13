@@ -1,4 +1,4 @@
-<div class="hero-wrap hero-bread"
+<div class="hero-wrap hero-bread" 
     style="background-image: url('<?=base_url().'views/themes/'.theme_active().'/';?>images/bg_1.jpg');">
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -53,7 +53,7 @@
                 <p class="price">
                     <?php if($produk->diskon!=0):?>
                     <span style="font-size:16pt;color:green;text-decoration:line-through solid;">
-                        <?=money($produk->diskon);?>
+                        <?=money($harga);?>
                     </span>
                     <?php endif;?>
                     <span><?=money($harga_pas);?></span>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="w-100"></div>
                     <div class="col-md-12">
-                        <p style="color: #000;"><?=$produk->berat;?> gram available</p>
+                        <p style="color: #000;"><?=$produk->berat;?> </p>
                         <!-- <p class="text-left mr-4">
                             <a href="#" class="mr-2">5.0</a>
                             <a href="#"><span class="ion-ios-star-outline"></span></a>
@@ -109,14 +109,12 @@
                 <p class="text-center"><a href="#" class="buy-now-login btn btn-black py-3 px-5"
                         data-produkid="<?=$produk->idproduct;?>" data-produkgambar="<?=$produk->product_image;?>"
                         data-produknama="<?=$produk->product_name;?>" data-produkharga="<?=$harga_pas;?>"
-                        data-produksatuan="<?=$produk->satuan;?>" data-produkberat="<?=$produk->berat;?>">Add to
-                        Cart</a></p>
+                        data-produksatuan="<?=$produk->satuan;?>" data-produkberat="<?=$produk->berat;?>">Tambahkan Ke Keranjang</a></p>
                 <?php else:?>
                 <p class="text-center"><a href="#" class="buy-now btn btn-black py-3 px-5"
                         data-produkid="<?=$produk->idproduct;?>" data-produkgambar="<?=$produk->product_image;?>"
                         data-produknama="<?=$produk->product_name;?>" data-produkharga="<?=$harga_pas;?>"
-                        data-produksatuan="<?=$produk->satuan;?>" data-produkberat="<?=$produk->berat;?>">Add to
-                        Cart</a></p>
+                        data-produksatuan="<?=$produk->satuan;?>" data-produkberat="<?=$produk->berat;?>">Tambahkan Ke Keranjang</a></p>
                 <?php endif;?>
                 <?php endif;?>
             </div>
